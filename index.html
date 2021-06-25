@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <title>Download Simulation</title>
+</head>
+
+<body>
+    <section id="container">
+        <h1>DOWNLOAD SIMULATION</h1>
+        <form action="#" id="form1" class="form">
+            <label for="fileSize">File Size: </label>
+            <div>
+                <input type="number" name="filesize" id="fileSize">
+                <select id="select_filesize">
+                    <option value="KB">KB(Kilobytes)</option>
+                    <option value="MB">MB(Megabytes)</option>
+                    <option value="GB">GB(Gigabytes)</option>
+                </select>
+            </div>
+        </form>
+        <form action="#" id="form2" class="form">
+            <label for="speed">Data transfer rate: </label>
+            <div>
+                <input type="number" name="speed" id="speed">
+                <select id="select_speed">
+                    <option value="kbps">Kilobits per second(Kbps)</option>
+                    <option value="mbps">Megabits per second(Mbps)</option>
+                    <option value="gbps">Gigabits per second(Gbps)</option>
+                </select>
+            </div>
+        </form>
+        <div class="estimated_time" id="estimatedTime">
+            <p>Estimated Time: </p>
+            <p id="fixedTime">0 seconds</p>
+        </div>
+        <div id="hr"></div>
+        <div id="progressHeading">
+            <h1>PROGRESS BAR:</h1>
+        </div>
+        <div id="downloadBar">
+            <div id="progress">
+                <p>0%</p>
+            </div>
+        </div>
+        <div class="remaining_time" id="remainingTime">
+            <p>Simulation Remaining Time: </p>
+            <p id="dynamicTime">0 seconds</p>
+        </div>
+        <div class="start_simulation" id="start_simulation">
+            <button id="start_btn">START SIMULATION</button>
+        </div>
+    </section>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

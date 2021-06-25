@@ -1,0 +1,385 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #100530;
+}
+
+#container{
+    min-height: 100vh;
+    padding: 0.2rem 0rem;
+    /* border: 2px solid red; */
+}
+
+#container h1{
+    text-align: center;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    /* border: 2px solid red; */
+    font-size: 4rem;
+}
+.form{
+    color: #fff;
+    margin: 0px auto;
+    background-color: #2f1c66;
+    width: 90vw;
+    margin-top: 10px;
+    height: 95px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.form label{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.form input{
+    margin: 0px 0px;
+    padding: 4px;
+    border-radius: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    background-color: rgb(228, 228, 228);
+    height: 3rem;
+    width: 25rem;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+
+.form select{
+    margin: 0px 0px;
+    padding: 4px;
+    border-radius: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    background-color: rgb(228, 228, 228);
+    height: 3rem;
+    width: 16rem;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+
+.estimated_time{
+    color: #fff;
+    margin: 0px auto;
+    background-color: #2f1c66;
+    width: 90vw;
+    margin-top: 10px;
+    height: 95px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.estimated_time p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+#hr{
+    height: 2px;
+    width: 90vw;
+    background-color: rgb(255 255 255 / 26%);
+    margin: 0px auto;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+#progressHeading{
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#progressHeading h1{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+#downloadBar{
+    width: 90vw;
+    height: 85px;
+    background-color: rgba(214, 214, 214, 0.808);
+    margin: 0px auto;
+    border-radius: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+    /* padding: 0px 20px; */
+    border: 5px solid rgb(255, 255, 255);
+}
+
+#progress{
+    height: 100%;
+    background: #0EAD19;
+    width: 0%;
+    border-radius: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    transition-property: all;
+    overflow: hidden;
+}
+
+
+#progress p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    overflow: hidden;
+}
+
+
+.remaining_time{
+    color: #fff;
+    margin: 0px auto;
+    background-color: #2f1c66;
+    width: 90vw;
+    margin-top: 10px;
+    height: 95px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.remaining_time p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+
+#start_simulation{
+    margin: 0px auto;
+    width: 90vw;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#start_btn{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    height: 80px;
+    width: 300px;
+    border-radius: 100px;
+    border: 8px solid #E38530;
+    background-color: #100530;
+    color: #fff;
+    cursor: pointer;
+}
+
+#start_btn:hover{
+    color: #E38530;
+}
+
+#start_btn:active{
+    color: #E38530;
+}
+
+@media screen and (max-width:1036px){
+    #container h1{
+        text-align: center;
+        color: #fff;
+        font-family: 'Ubuntu', sans-serif;
+        /* border: 2px solid red; */
+        font-size: 2rem;
+    }
+    .form{
+        color: #fff;
+        margin: 0px auto;
+        background-color: #2f1c66;
+        width: 95vw;
+        margin-top: 10px;
+        min-height: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 20px;
+    }
+    
+    .form label{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+    
+    .form input{
+        margin: 0px 0px;
+        padding: 4px;
+        border-radius: 10px;
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 700;
+        background-color: rgb(228, 228, 228);
+        height: 3rem;
+        width: 5rem;
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+    
+    .form select{
+        margin: 0px 0px;
+        padding: 4px;
+        border-radius: 10px;
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 700;
+        background-color: rgb(228, 228, 228);
+        height: 3rem;
+        width: 11rem;
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+    
+    .estimated_time{
+        color: #fff;
+        margin: 0px auto;
+        background-color: #2f1c66;
+        width: 95vw;
+        margin-top: 10px;
+        min-height: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 20px;
+    }
+    
+    .estimated_time p{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+    
+    #hr{
+        height: 2px;
+        width: 95vw;
+        background-color: rgb(255 255 255 / 26%);
+        margin: 0px auto;
+        margin-top: 20px;
+        border-radius: 50px;
+    }
+    
+    #progressHeading{
+        width: 95vw;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    #progressHeading h1{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 21px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        text-align: left;
+    }
+    
+    #downloadBar{
+        width: 95vw;
+        height: 55px;
+        background-color: rgba(214, 214, 214, 0.808);
+        margin: 0px auto;
+        border-radius: 100px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        overflow: hidden;
+        /* padding: 0px 20px; */
+        border: 5px solid rgb(255, 255, 255);
+    }
+    
+    #progress{
+        height: 100%;
+        background: #0EAD19;
+        width: 0%;
+        border-radius: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+        transition-property: all;
+        overflow: hidden;
+    }
+    
+    
+    #progress p{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        overflow: hidden;
+    }
+    
+    
+    .remaining_time{
+        color: #fff;
+        margin: 0px auto;
+        background-color: #2f1c66;
+        width: 95vw;
+        margin-top: 10px;
+        min-height: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 20px;
+    }
+    
+    .remaining_time p{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+    
+    
+    #start_simulation{
+        margin: 0px auto;
+        width: 95vw;
+        height: 95px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    #start_btn{
+        font-family: 'PT Sans', sans-serif;
+        font-size: 21px;
+        font-weight: 600;
+        height: 80px;
+        width: 300px;
+        border-radius: 100px;
+        border: 8px solid #E38530;
+        background-color: #100530;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+
+}
