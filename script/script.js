@@ -123,6 +123,7 @@ function calc(){
                 clearInterval(interval);
                 btn.disabled = false;
                 remainingTime.innerHTML = '0 seconds'
+                alert("Download Complete");
             }
 
         }, 1000);
