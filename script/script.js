@@ -119,9 +119,10 @@ function calc(){
             console.log(countTime);
             tempTimedecremental--;
             remainingTime.innerHTML = tempTimedecremental +' '+ 'seconds';
-            if(countTime == tempTimealt){
+            if(countTime >= tempTimealt){
                 clearInterval(interval);
                 btn.disabled = false;
+                remainingTime.innerHTML = '0 seconds'
             }
 
         }, 1000);
