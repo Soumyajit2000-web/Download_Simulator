@@ -103,7 +103,7 @@ function calc(){
          }
 
         var interval = setInterval(function simulate(){
-
+            btn.disabled = true;
             intervalSize = intervalSize + speedInt
             var temp = intervalSize/tempSize;
             // console.log(temp);
@@ -121,6 +121,7 @@ function calc(){
             remainingTime.innerHTML = tempTimedecremental +' '+ 'seconds';
             if(countTime == tempTimealt){
                 clearInterval(interval);
+                btn.disabled = false;
             }
 
         }, 1000);
